@@ -1,16 +1,190 @@
 # Purpose
-You are an agent writing agent instructions and artifacts using the documents. It will be usable by agents. Read through the human write up. And come up with the skills. This is a repository of frameworks, tools, and people that can be hired as agent, or leveraged as agent skills to help with an individual's problem-solving or as a thought partner.
 
-Example are, someone might come in to ask for a thought partner. The agent should reply with what persona they want, and offer the examples available (sourced from People subdirectory). Or, they might come with a problem or a work situation. With this, the agent will ask more about what kind of situation or problem it is. Once they have sufficient information they can propose or adopt a framework or tool that is most applicable to that situation. 
+You are an agent writing agent instructions and artifacts from documents in this vault, usable by other agents. Read the human write-up, then break it down following this document.
 
-Each framework, person, 
+This is a repository of frameworks, tools, and people that can be leveraged as agent skills — to help with an individual's problem-solving, or as a thought partner.
+
+Two entry points a user comes in through:
+
+- **They want a thought partner.** Offer the personas available, sourced from `people/`.
+- **They come with a problem or situation.** Ask enough to place it, then propose the framework or tool that fits.
+
+Every framework, person, and tool has a human-written source page. It stays exactly as written — never edited, only linked to and expanded from. Everything derived from it (concepts, problems, skills, deep-dives) is agent-written. See **Marking Authorship** below for how the two are told apart.
+
+Where a human page's rituals, concepts, or advice call for their own page, break them out — one page per ritual/concept/problem, in the right subfolder, following the templates below.
+
+---
+
+# When to Break a Page Down
+
+Not every page earns a folder. Expand a source page when at least one of these is true:
+
+- It names 3+ distinct concepts, rituals, or techniques that would each need their own diagnosis/discovery-question treatment to be useful in a real conversation.
+- Someone would plausibly ask about one piece of it without needing the whole thing.
+- It's long enough that a single page would bury the part someone actually came for.
+
+If none of these are true, leave it as a single page. A one-page tool or a person's link-dump doesn't need a folder — see `tools/socratic-questioning.md` or `people/michael-pollan.md`, which are fine as they are.
+
+**Example:** `frameworks/shape-up.md`'s "Key Rituals and Artifacts" already names five distinct rituals (Shaping, Pitch, Betting, Building, Cool-down), each with its own steps and its own "when would someone ask about just this one" case. That clears the bar — it should become `frameworks/shape-up/` with the source page plus one page per ritual.
+
+---
 
 # Structure
-Help agents know when and how to use it. 
 
-Users will come with their problems or situation that they want to spar with the agent with. 
+Help agents know when and how to use it. Users will come with their problems or situation that they want to spar with the agent about.
+
+Every topic's landing page (the file a user or agent lands on first — e.g. `Systems Thinking - Agent-written.md`) needs two things, in some form. The exact heading text can vary by topic — Systems Thinking calls its index "Problem Gateway" rather than "Agents/Skills Available," and that's fine — but both of these have to be present somewhere on the page:
 
 ## When to use it
 
+State the trigger conditions plainly: what a user says, asks, or describes that means this topic applies. Prefer concrete phrasing over category names — "throughput dropping despite stable headcount" over "a velocity problem." If a topic covers more than one situation, this doubles as the index into those situations (Systems Thinking's "Problem Gateway" does both jobs at once).
+
 ## Agents/Skills Available
-Will be specific to each concept, person, or framework
+
+Specific to each concept, person, or framework: a list of the derived pages under this topic, each as a one-line bolded link plus what it's for. This is the payoff of the breakdown — it's how an agent (or the user) finds the right sub-page instead of reading the whole topic.
+
+---
+
+# Folder Shape
+
+For anything past the expansion threshold:
+
+```
+{category}/{topic}/
+  {Topic} - source.md      <- the original human-written page, untouched, renamed with " - source"
+  {sub-item}.md             <- one per ritual/concept/problem/technique, agent-written
+  {sub-item}.md
+  ...
+```
+
+`{category}` is whichever top-level folder the topic already lives in (`frameworks/`, `people/`, `tools/`). When a topic has more than one *kind* of sub-item, use subfolders — the pattern already proven in `frameworks/systems-thinking/` is `concepts/` for foundational principles and `problems/` for situations. `frameworks/shape-up/` would likely want `rituals/`.
+
+**Never link to a file that doesn't exist yet.** List planned-but-unwritten sub-items in a "Planned" section without links — see the Problem Gateway's "Planned" list for the pattern.
+
+---
+
+# Marking Authorship
+
+Every derived page carries a `written_by` field in frontmatter: `human` or `agent`.
+
+This replaces the ad-hoc "- Agent-written" filename suffix used in the first systems-thinking pass — a filename suffix isn't machine-readable and doesn't scale past one file per topic. Going forward:
+
+- **Human-written source pages** get renamed with " - source" appended once a topic is broken out (e.g. `Shape Up.md` → `shape-up - source.md`). Leave the content untouched. Add `written_by: "human"` in frontmatter only if frontmatter already exists on the page — don't add frontmatter to a source page solely for this.
+- **Agent-written pages** always get `written_by: "agent"` in frontmatter, alongside whatever else their type requires below.
+
+---
+
+# What a "Skill" Is Here
+
+A skill is a markdown page in the topic's folder — the same file type as a concept or problem page, not a separate installable Claude Code skill. Shape:
+
+```yaml
+---
+skill_name: "Name"
+written_by: "agent"
+trigger:
+  - "What a user says or asks that means this applies"
+  - "What a situation looks like that means this applies"
+related_concepts: []
+---
+```
+
+```markdown
+## When to Use
+(the trigger conditions above, written as prose)
+
+## How to Act
+(stance, discovery questions to ask, what to commit to — following the house style)
+```
+
+**Why this shape and not a real `SKILL.md`:** the vault is read as context by an agent already in conversation — that's exactly how `frameworks/systems-thinking/` works today, with no install step. If a specific skill earns reuse outside this vault, promote it to a real installable skill as a deliberate, separate step later. That's not the default for every framework, person, or tool that gets broken down.
+
+---
+
+# Frontmatter by Sub-Item Type
+
+**Problem / situation page:**
+
+```yaml
+---
+title: "Problem Title"
+written_by: "agent"
+category: "..."
+related_concepts: []
+stocks: []
+flows: []
+feedback_loops:
+  - description: "..."
+    type: "reinforcing | balancing"
+delays: []
+limiting_factors: []
+---
+```
+
+**Concept page:**
+
+```yaml
+---
+concept_name: "Name"
+written_by: "agent"
+concept_types: ["Reinforcing | Balancing | Structural"]
+related_problems: []
+intervention_categories: []
+---
+```
+
+**Skill page:** see above.
+
+**People and Tools pages that don't fit the stocks/flows/delays vocabulary** — most won't; that vocabulary belongs to systems thinking specifically, not to the vault as a whole. Use just:
+
+```yaml
+---
+title: "..."
+written_by: "agent"
+related_people: []
+related_tools: []
+related_frameworks: []
+---
+```
+
+Don't force stocks/flows language onto a page that isn't a systems-thinking framework.
+
+---
+
+# Section Order
+
+For systems-thinking-shaped content, follow what's already proven in `frameworks/systems-thinking/problems/retention.md` and `frameworks/systems-thinking/concepts/feedback-loops.md`: Problem Statement → Diagnosis → Guided Discovery Questions → Diagnosis Checkpoint → Where I'd Start → Intervention Strategies → What Would Change This Diagnosis → Examples → Related Problems.
+
+For everything else (most People and Tools pages), the minimum bar is **When to Use**, then either **How to Act** (skill page) or **What It Is** (concept-shaped page). Don't invent new section names per page — reuse these unless a page genuinely needs something the others don't cover.
+
+---
+
+# Writing Stance
+
+Don't restate it here — follow the [house style](../README.md#house-style-be-a-thought-partner): extract before you advise, then commit, show the reasoning, say what would change your mind. Every derived page follows it, regardless of topic.
+
+---
+
+# Light Research
+
+When a source page references something without explaining it — a named technique, a person's framework, a book — a short outbound link plus a one-sentence gloss is enough. Don't write a parallel essay on someone else's idea. Cite per the repo norm: name the source, link it, and keep your interpretation clearly separate from the source's own claims.
+
+---
+
+# Completion Checklist
+
+A breakdown is done when:
+
+- [ ] The source page is untouched and renamed with " - source"
+- [ ] Every derived page has `written_by: "agent"` and the frontmatter shape for its type
+- [ ] Every `related_*` link is bidirectional — if A references B, B references A
+- [ ] Every link resolves to a file that exists
+- [ ] The topic's landing page has both a **When to use it** and an **Agents/Skills Available** section (in whatever heading form fits the topic)
+- [ ] The repo [README](../README.md)'s topic index is updated, if this is a new top-level framework, person, or tool
+- [ ] At least one worked example exists per skill or problem page
+
+---
+
+# Worked Example
+
+Don't duplicate content here — read `frameworks/systems-thinking/` for the canonical example of this process applied to a framework, and match its length, tone, and link discipline when adding new pages.

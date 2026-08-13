@@ -35,7 +35,7 @@ Applying Donella Meadows' systems thinking to problems technology workers face.
 
 ### Planned
 
-Not yet written. Following the process in [METHODOLOGY.md](METHODOLOGY.md).
+Not yet written. Following the process in [METHODOLOGY.md](../../docs/METHODOLOGY.md).
 
 - Scope Creep — feature requests expand without boundaries; timelines slip
 - Burnout & Stress — exhaustion, disengagement, health impacts
@@ -72,7 +72,7 @@ The foundational principles. Each explains how the concept shows up in tech and 
 
 3. **You want to diagnose something not listed.** Start with [Stocks & Flows](stocks-and-flows.md) to find what's accumulating, then [Feedback Loops](feedback-loops.md) to find what's driving it, then [Delays](delays.md) to understand why your fixes aren't showing up yet.
 
-4. **You're building a similar guide for another topic.** Read [METHODOLOGY.md](METHODOLOGY.md) for the reusable structure, and [PHASE-2-ROADMAP.md](PHASE-2-ROADMAP.md) for what's queued here.
+4. **You're building a similar guide for another topic.** Read [METHODOLOGY.md](../../docs/METHODOLOGY.md) for the reusable structure. What's queued for this guide is listed above, under Planned.
 
 ---
 
