@@ -46,11 +46,11 @@ Resilience is what you pay for the perturbation you haven't had yet. That's why 
 ### What brittleness looks like from inside
 
 - **Bus factor of one.** One engineer understands billing, or the deploy pipeline, or the customer-specific pricing logic. Nobody is worried, because that engineer is excellent and has been here five years. The exposure is invisible precisely because it's working.
-- **100% utilization.** Every sprint is fully committed. An incident, a sick week, or an urgent customer escalation doesn't consume slack — there is none — so it consumes committed work, and everything slips at once. See [Velocity Decline](../problems/velocity-decline.md).
-- **Tight coupling.** A shared library, a shared database, or a single deploy pipeline means a failure anywhere is a failure everywhere. Blast radius grows quietly as the system consolidates. See [Architecture Debt](../problems/architecture-debt.md).
+- **100% utilization.** Every sprint is fully committed. An incident, a sick week, or an urgent customer escalation doesn't consume slack — there is none — so it consumes committed work, and everything slips at once. See [Velocity Decline](velocity-decline.md).
+- **Tight coupling.** A shared library, a shared database, or a single deploy pipeline means a failure anywhere is a failure everywhere. Blast radius grows quietly as the system consolidates. See [Architecture Debt](architecture-debt.md).
 - **Untested recovery.** The failover exists, the runbook exists, the backup job reports success. None of it has been exercised under real conditions. A recovery path you haven't run is a belief.
-- **Onboarding that depends on one person.** New hires ramp fine because a senior engineer answers every question. Nobody notices this is the whole onboarding system until that engineer goes on leave and the next two hires take twice as long. See [Onboarding Friction](../problems/onboarding-friction.md).
-- **One channel of coordination.** Two teams work together well because two specific people talk. Neither team has a working process; they have a relationship. When one of them moves teams, coordination stops. See [Cross-Team Communication](../problems/cross-team-communication.md).
+- **Onboarding that depends on one person.** New hires ramp fine because a senior engineer answers every question. Nobody notices this is the whole onboarding system until that engineer goes on leave and the next two hires take twice as long. See [Onboarding Friction](onboarding-friction.md).
+- **One channel of coordination.** Two teams work together well because two specific people talk. Neither team has a working process; they have a relationship. When one of them moves teams, coordination stops. See [Cross-Team Communication](cross-team-communication.md).
 
 ### What resilience looks like from inside
 
@@ -102,7 +102,7 @@ Concretely: name the second person, assign them the next three real changes in t
 
 **Strategy:** Move real production work — not shadowing, not documentation — to a second person, with the expert constrained to review. Pick work with real consequences; low-stakes practice transfers low-stakes knowledge.
 
-**Tech example:** One engineer owns the payments integration. Assign the next three payment changes to a second engineer with the owner reviewing only. The first change takes three times as long and surfaces four undocumented behaviors nobody knew were load-bearing. By the third, the second engineer is on the escalation path. That's a quarter of reduced throughput in exchange for removing the org's single largest exposure. See [Retention Problem](../problems/retention.md).
+**Tech example:** One engineer owns the payments integration. Assign the next three payment changes to a second engineer with the owner reviewing only. The first change takes three times as long and surfaces four undocumented behaviors nobody knew were load-bearing. By the third, the second engineer is on the escalation path. That's a quarter of reduced throughput in exchange for removing the org's single largest exposure. See [Retention Problem](retention.md).
 
 ### 2. Restore slack
 
@@ -112,7 +112,7 @@ Concretely: name the second person, assign them the next three real changes in t
 
 **Strategy:** Commit to 80% of capacity and protect the remainder structurally rather than by intention. Unprotected slack is reclaimed within two sprints by whoever needs capacity most urgently.
 
-**Tech example:** A team fully committed each sprint misses its commitment every time an incident lands, which is most sprints, and the org concludes the team over-commits. Drop planned scope to 80%. Incidents now consume the buffer, delivery becomes predictable, and total output rises because the constant re-planning tax disappears. Predictable delivery at 80% beats theoretical delivery at 100%. See [Velocity Decline](../problems/velocity-decline.md).
+**Tech example:** A team fully committed each sprint misses its commitment every time an incident lands, which is most sprints, and the org concludes the team over-commits. Drop planned scope to 80%. Incidents now consume the buffer, delivery becomes predictable, and total output rises because the constant re-planning tax disappears. Predictable delivery at 80% beats theoretical delivery at 100%. See [Velocity Decline](velocity-decline.md).
 
 ### 3. Decouple the failure path
 
@@ -122,7 +122,7 @@ Concretely: name the second person, assign them the next three real changes in t
 
 **Strategy:** Take one real recent incident, map everything it took down, and cut the single largest propagation path. Bulkheads, timeouts, independent deploy paths, and separate data stores all do this. Repeat per incident rather than attempting a general decoupling program.
 
-**Tech example:** One flaky shared service brings down four product surfaces because each calls it synchronously with no timeout. Add timeouts and degraded-mode fallbacks at each call site. The service still fails at the same rate; the incident is now one degraded feature instead of a full outage, and it stops being an all-hands event. See [Architecture Debt](../problems/architecture-debt.md).
+**Tech example:** One flaky shared service brings down four product surfaces because each calls it synchronously with no timeout. Add timeouts and degraded-mode fallbacks at each call site. The service still fails at the same rate; the incident is now one degraded feature instead of a full outage, and it stops being an all-hands event. See [Architecture Debt](architecture-debt.md).
 
 ### 4. Exercise the recovery
 
@@ -154,11 +154,11 @@ Concretely: name the second person, assign them the next three real changes in t
 
 ## Cross-References to Problems
 
-- [Retention Problem](../problems/retention.md) — concentrated knowledge makes every departure a crisis, and the cost of losing someone is set by how much only they knew
-- [Velocity Decline](../problems/velocity-decline.md) — zero slack converts every surprise into a missed commitment, so delivery degrades without capacity ever changing
-- [Architecture Debt](../problems/architecture-debt.md) — tight coupling means blast radius grows as the system consolidates, and each failure costs more than the last
-- [Onboarding Friction](../problems/onboarding-friction.md) — ramp-up that depends on one available expert is a single point of failure in the hiring pipeline itself
-- [Cross-Team Communication](../problems/cross-team-communication.md) — coordination that runs through two specific people is a relationship rather than a process, and it ends when either one moves
+- [Retention Problem](retention.md) — concentrated knowledge makes every departure a crisis, and the cost of losing someone is set by how much only they knew
+- [Velocity Decline](velocity-decline.md) — zero slack converts every surprise into a missed commitment, so delivery degrades without capacity ever changing
+- [Architecture Debt](architecture-debt.md) — tight coupling means blast radius grows as the system consolidates, and each failure costs more than the last
+- [Onboarding Friction](onboarding-friction.md) — ramp-up that depends on one available expert is a single point of failure in the hiring pipeline itself
+- [Cross-Team Communication](cross-team-communication.md) — coordination that runs through two specific people is a relationship rather than a process, and it ends when either one moves
 
 ---
 

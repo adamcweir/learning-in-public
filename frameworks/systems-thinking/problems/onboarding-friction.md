@@ -104,15 +104,15 @@ The cap is what makes the service level real. Four hours is a promise about seni
 
 **The branch:** if question 3 shows first-response time is already under four hours and ramp is still slow, the constraint is task supply. Start instead by building a standing inventory of ten to fifteen bounded starter tasks — real work, small blast radius, a known-good implementation someone can compare against — and keep it stocked as a permanent obligation rather than a scramble the week someone starts.
 
-**What I would not start with:** a documentation sprint. Writing docs is the most legible response, it consumes exactly the senior hours that are already scarce, and it acts on an input that is not binding. See [System Limits](../concepts/limits.md) for why increasing a non-binding input produces nothing. Documentation earns its place later, written incrementally at the moment a question is asked, by the person who asked it.
+**What I would not start with:** a documentation sprint. Writing docs is the most legible response, it consumes exactly the senior hours that are already scarce, and it acts on an input that is not binding. See [System Limits](limits.md) for why increasing a non-binding input produces nothing. Documentation earns its place later, written incrementally at the moment a question is asked, by the person who asked it.
 
 ## Systems Concepts at Play
 
-- [System Limits](../concepts/limits.md) — senior attention is the binding constraint, and every intervention that adds documentation instead of attention is optimizing a non-binding input
-- [Delays](../concepts/delays.md) — review latency is the cycle time of the learning loop, so shortening it multiplies the correction a new hire receives per week
-- [Feedback Loops](../concepts/feedback-loops.md) — slow ramp consumes the mentoring capacity that would speed the ramp, and question-rationing quietly reinforces it
-- [Stocks & Flows](../concepts/stocks-and-flows.md) — headcount is the visible stock; the governing stocks are working context in the hire's head and unbooked senior hours
-- [Resilience](../concepts/resilience.md) — an onboarding path that depends on one person answering every question fails completely the week that person takes vacation
+- [System Limits](limits.md) — senior attention is the binding constraint, and every intervention that adds documentation instead of attention is optimizing a non-binding input
+- [Delays](delays.md) — review latency is the cycle time of the learning loop, so shortening it multiplies the correction a new hire receives per week
+- [Feedback Loops](feedback-loops.md) — slow ramp consumes the mentoring capacity that would speed the ramp, and question-rationing quietly reinforces it
+- [Stocks & Flows](stocks-and-flows.md) — headcount is the visible stock; the governing stocks are working context in the hire's head and unbooked senior hours
+- [Resilience](resilience.md) — an onboarding path that depends on one person answering every question fails completely the week that person takes vacation
 
 ## Intervention Strategies
 

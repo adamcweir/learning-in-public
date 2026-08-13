@@ -105,16 +105,16 @@ The metric has to be genuinely joint. "End-to-end time from customer request to 
 
 **The branch:** if question 3 produced a shared metric both teams named and question 4 showed propagation time exceeding lead time, this is an information-delay problem and the goals are fine. Start instead with a written decision log carrying a named list of dependent teams and a 24-hour propagation obligation on the decider. That single change removes most rework in aligned organizations and costs almost nothing.
 
-**What I would not start with:** a recurring cross-team sync, a new Slack channel, or a liaison role. Each consumes coordination capacity, which [System Limits](../concepts/limits.md) tells you is already the binding constraint, and none of them changes what either team is optimizing for. A goal conflict given more airtime becomes a louder goal conflict.
+**What I would not start with:** a recurring cross-team sync, a new Slack channel, or a liaison role. Each consumes coordination capacity, which [System Limits](limits.md) tells you is already the binding constraint, and none of them changes what either team is optimizing for. A goal conflict given more airtime becomes a louder goal conflict.
 
 ## Systems Concepts at Play
 
-- [Hierarchy & Suboptimization](../concepts/hierarchy.md) — each team is locally rational against its own scorecard, and the sum of locally optimal choices is globally destructive when no shared goal exists
-- [Delays](../concepts/delays.md) — decisions propagate slower than dependent work starts, which makes rework structural rather than a matter of anyone's diligence
-- [Feedback Loops](../concepts/feedback-loops.md) — rework and frustration reduce voluntary collaboration, which produces more silent assumptions; the balancing loops defend each team's local goal against your process changes
-- [System Traps](../concepts/system-traps.md) — this is policy resistance in its cleanest form: every team pulls the system toward its own target, and added process gets absorbed without changing the equilibrium
-- [System Limits](../concepts/limits.md) — coordination pairs grow as n(n-1)/2 while coordination capacity grows linearly, so any fix built on "communicate more" has a ceiling you will hit
-- [Resilience](../concepts/resilience.md) — dependencies that route through one person or one team have no redundancy, so a single absence stalls work across boundaries
+- [Hierarchy & Suboptimization](hierarchy.md) — each team is locally rational against its own scorecard, and the sum of locally optimal choices is globally destructive when no shared goal exists
+- [Delays](delays.md) — decisions propagate slower than dependent work starts, which makes rework structural rather than a matter of anyone's diligence
+- [Feedback Loops](feedback-loops.md) — rework and frustration reduce voluntary collaboration, which produces more silent assumptions; the balancing loops defend each team's local goal against your process changes
+- [System Traps](system-traps.md) — this is policy resistance in its cleanest form: every team pulls the system toward its own target, and added process gets absorbed without changing the equilibrium
+- [System Limits](limits.md) — coordination pairs grow as n(n-1)/2 while coordination capacity grows linearly, so any fix built on "communicate more" has a ceiling you will hit
+- [Resilience](resilience.md) — dependencies that route through one person or one team have no redundancy, so a single absence stalls work across boundaries
 
 ## Intervention Strategies
 

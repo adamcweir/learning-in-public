@@ -95,7 +95,7 @@ Does your situation match this pattern?
 
 **Fewer than three, and the drop is tied to one event:** find the event. A reorg, a migration, or a new compliance gate is a direct cause, not a system, and it gets a direct fix.
 
-**Output is flat but expectations rose:** you have a goal problem, not a velocity problem. Read [Hierarchy & Suboptimization](../concepts/hierarchy.md) instead — the gap is between what the team optimizes for and what its stakeholders count.
+**Output is flat but expectations rose:** you have a goal problem, not a velocity problem. Read [Hierarchy & Suboptimization](hierarchy.md) instead — the gap is between what the team optimizes for and what its stakeholders count.
 
 ## Where I'd Start
 
@@ -114,17 +114,17 @@ The system logic: velocity is a shared output of four systems, and the four inte
 - **Active time rose sharply in specific subsystems after specific departures:** knowledge loss. Go to [Retention Problem](retention.md); the lever is forced handoff, and backfilling will not help this quarter.
 - **Per-engineer output fell while headcount grew:** coordination overhead. Reduce the number of people who must agree per change by moving ownership boundaries to match system boundaries.
 
-**What I would not start with:** tighter story point tracking, per-engineer output dashboards, or a velocity commitment. Measuring an output harder changes the reporting behavior that produces the measurement and leaves the four underlying systems untouched. See [System Traps](../concepts/system-traps.md) for why this failure mode is so reliable.
+**What I would not start with:** tighter story point tracking, per-engineer output dashboards, or a velocity commitment. Measuring an output harder changes the reporting behavior that produces the measurement and leaves the four underlying systems untouched. See [System Traps](system-traps.md) for why this failure mode is so reliable.
 
 ## Systems Concepts at Play
 
-- [Feedback Loops](../concepts/feedback-loops.md) — three reinforcing loops (debt, coordination, measurement) compete with one weak, manually operated balancing loop
-- [Stocks & Flows](../concepts/stocks-and-flows.md) — velocity is a flow; complexity, knowledge, and work-in-progress are the stocks that set it
-- [Delays](../concepts/delays.md) — shortcuts show up in throughput one to two quarters later, so the visible cause is always the wrong one
-- [System Limits](../concepts/limits.md) — review capacity, CI throughput, and senior attention are the usual binding constraints, and adding anything else does nothing
-- [Hierarchy & Suboptimization](../concepts/hierarchy.md) — coordination overhead is what you pay when team boundaries and system boundaries disagree
-- [System Traps](../concepts/system-traps.md) — measuring velocity harder is the "seeking the wrong goal" trap, and it corrupts your diagnostic instrument
-- [Resilience](../concepts/resilience.md) — a team running at full utilization has no slack to absorb variance, so average throughput falls even when nothing has gone wrong
+- [Feedback Loops](feedback-loops.md) — three reinforcing loops (debt, coordination, measurement) compete with one weak, manually operated balancing loop
+- [Stocks & Flows](stocks-and-flows.md) — velocity is a flow; complexity, knowledge, and work-in-progress are the stocks that set it
+- [Delays](delays.md) — shortcuts show up in throughput one to two quarters later, so the visible cause is always the wrong one
+- [System Limits](limits.md) — review capacity, CI throughput, and senior attention are the usual binding constraints, and adding anything else does nothing
+- [Hierarchy & Suboptimization](hierarchy.md) — coordination overhead is what you pay when team boundaries and system boundaries disagree
+- [System Traps](system-traps.md) — measuring velocity harder is the "seeking the wrong goal" trap, and it corrupts your diagnostic instrument
+- [Resilience](resilience.md) — a team running at full utilization has no slack to absorb variance, so average throughput falls even when nothing has gone wrong
 
 ## Intervention Strategies
 
@@ -170,11 +170,11 @@ The system logic: velocity is a shared output of four systems, and the four inte
 
 ## What Would Change This Diagnosis
 
-- **Cycle time and change cost are flat, and only the roadmap grew.** You have an expectation gap, not a velocity decline. Read [Hierarchy & Suboptimization](../concepts/hierarchy.md).
+- **Cycle time and change cost are flat, and only the roadmap grew.** You have an expectation gap, not a velocity decline. Read [Hierarchy & Suboptimization](hierarchy.md).
 - **The decline maps cleanly onto senior departures in the affected subsystems.** This is the retention spiral surfacing a quarter late. Go to [Retention Problem](retention.md); interventions here will be treating a symptom.
 - **Most of the loss is in the first three months of every new hire's tenure and the team is growing fast.** That's a ramp problem. Read [Onboarding Friction](onboarding-friction.md).
 - **Work stalls waiting on other teams rather than inside your own queue.** The constraint is outside your boundary. Read [Cross-Team Communication](cross-team-communication.md).
-- **Cost of change is high but has been high and stable for years.** A flat cost is a stock you can pay down once and be done with, not a loop. Read [Stocks & Flows](../concepts/stocks-and-flows.md) and size the one-time work.
+- **Cost of change is high but has been high and stable for years.** A flat cost is a stock you can pay down once and be done with, not a loop. Read [Stocks & Flows](stocks-and-flows.md) and size the one-time work.
 
 ## Tech Examples
 

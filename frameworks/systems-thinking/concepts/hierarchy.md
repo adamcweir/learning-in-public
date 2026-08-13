@@ -36,19 +36,19 @@ The diagnostic move is to stop asking *why are they behaving this way* and start
 
 ### Team-level
 
-- **Product and Engineering over debt.** Product is measured on shipped features per quarter; Engineering is measured on incident count and code health. Refactoring costs Product its scoreboard and buys Engineering theirs. The argument recurs every planning cycle because the structure regenerates it. See [Architecture Debt](../problems/architecture-debt.md).
+- **Product and Engineering over debt.** Product is measured on shipped features per quarter; Engineering is measured on incident count and code health. Refactoring costs Product its scoreboard and buys Engineering theirs. The argument recurs every planning cycle because the structure regenerates it. See [Architecture Debt](architecture-debt.md).
 - **Frontend and Backend over API shape.** Frontend is measured on interaction latency and ships whatever gets the page fast; Backend is measured on data correctness and consistency guarantees. The API lands wherever the more senior party wins, and neither team owns the resulting mismatch.
-- **Your team and the shared codebase.** Every team is measured on its own delivery. The shared service is nobody's scoreboard, so every team takes the change that is cheapest for them and most expensive for the file. Shared code degrades fastest in orgs with the cleanest per-team metrics. See [Cross-Team Communication](../problems/cross-team-communication.md).
+- **Your team and the shared codebase.** Every team is measured on its own delivery. The shared service is nobody's scoreboard, so every team takes the change that is cheapest for them and most expensive for the file. Shared code degrades fastest in orgs with the cleanest per-team metrics. See [Cross-Team Communication](cross-team-communication.md).
 
 ### Department-level
 
 - **Sales and Engineering.** Sales is compensated on closed deals; Engineering absorbs the commitments. A one-off promised in a deal is free to the subsystem that made it and expensive to the subsystem that keeps it, so promises accumulate.
-- **Finance and Engineering.** Finance is measured on cost per unit of output and holds headcount flat. The saving is immediate and legible; the cost — slower delivery, a thinner bus factor, departures — arrives two quarters later against a different owner's number. See [Velocity Decline](../problems/velocity-decline.md).
+- **Finance and Engineering.** Finance is measured on cost per unit of output and holds headcount flat. The saving is immediate and legible; the cost — slower delivery, a thinner bus factor, departures — arrives two quarters later against a different owner's number. See [Velocity Decline](velocity-decline.md).
 - **Security and everyone.** Security is measured on vulnerabilities admitted, never on delivery slowed. A review gate with no latency budget is the correct move for that subsystem and a tax on every other one.
 
 ### Individual-level
 
-- **Growth and coverage.** An engineer is promoted for visible scope, so they take the greenfield service and leave the migration, the flaky test suite, and the on-call runbook to whoever is least able to refuse. The promo packet rewards exactly this. See [Retention Problem](../problems/retention.md).
+- **Growth and coverage.** An engineer is promoted for visible scope, so they take the greenfield service and leave the migration, the flaky test suite, and the on-call runbook to whoever is least able to refuse. The promo packet rewards exactly this. See [Retention Problem](retention.md).
 - **Indispensability and maintainability.** An engineer's job security rises with how much only they understand. Nothing forces sabotage; simply skipping the documentation and taking the review shortcuts they can hold in their head is enough. The team wants legibility, the individual is rewarded for being load-bearing.
 - **Manager headcount and org throughput.** Managers are evaluated on the size and importance of what they own, which makes giving a project away a personal loss and taking one on a personal gain. Ownership migrates toward whoever wants it rather than whoever is closest to the work.
 
@@ -116,7 +116,7 @@ Concretely: pick the single most costly recurring conflict. Write down what each
 
 **Strategy:** State the system-level outcome in one measurable sentence, then give both subsystems a shared line item against it. Joint accountability means both win together or neither does — a shared goal that only one party is graded on is not shared.
 
-**Tech example:** Product and Engineering deadlock on debt every planning cycle. Define the system goal as "sustained delivery rate over four quarters," measured as features shipped per quarter with the trend line visible. Both teams are reviewed on the same trend. Product now has a reason to fund refactoring, because a declining trend is their problem too. See [Architecture Debt](../problems/architecture-debt.md).
+**Tech example:** Product and Engineering deadlock on debt every planning cycle. Define the system goal as "sustained delivery rate over four quarters," measured as features shipped per quarter with the trend line visible. Both teams are reviewed on the same trend. Product now has a reason to fund refactoring, because a declining trend is their problem too. See [Architecture Debt](architecture-debt.md).
 
 ### 4. Move the boundary so the subsystem contains its own consequence
 
@@ -148,10 +148,10 @@ Concretely: pick the single most costly recurring conflict. Write down what each
 
 ## Cross-References to Problems
 
-- [Retention Problem](../problems/retention.md) — individual growth incentives pull people toward visible new work while unglamorous critical work concentrates on whoever won't refuse it, and those are the people who leave
-- [Velocity Decline](../problems/velocity-decline.md) — cost-optimizing one department while delivery is owned by another exports the slowdown to a number nobody is currently accountable for
-- [Architecture Debt](../problems/architecture-debt.md) — shared code degrades because every team is measured on its own delivery and no one is measured on the file
-- [Cross-Team Communication](../problems/cross-team-communication.md) — silos are the rational output of per-team scoreboards, so communication programs fail while the scoreboards stand
+- [Retention Problem](retention.md) — individual growth incentives pull people toward visible new work while unglamorous critical work concentrates on whoever won't refuse it, and those are the people who leave
+- [Velocity Decline](velocity-decline.md) — cost-optimizing one department while delivery is owned by another exports the slowdown to a number nobody is currently accountable for
+- [Architecture Debt](architecture-debt.md) — shared code degrades because every team is measured on its own delivery and no one is measured on the file
+- [Cross-Team Communication](cross-team-communication.md) — silos are the rational output of per-team scoreboards, so communication programs fail while the scoreboards stand
 
 ---
 

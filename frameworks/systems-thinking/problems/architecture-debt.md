@@ -91,7 +91,7 @@ Does your situation match this pattern?
 
 **Four or more:** the quick-fix loop is running and the recommendation below applies directly.
 
-**Fewer than three, and the cost of change is high but stable:** you have a stock without a loop. Size it, schedule it, finish it. Read [Stocks & Flows](../concepts/stocks-and-flows.md) and skip the loop-breaking work entirely.
+**Fewer than three, and the cost of change is high but stable:** you have a stock without a loop. Size it, schedule it, finish it. Read [Stocks & Flows](stocks-and-flows.md) and skip the loop-breaking work entirely.
 
 **Changes are cheap inside your code but slow to get reviewed, approved, or released:** the constraint is a queue, not the architecture. Go to [Velocity Decline](velocity-decline.md) and start with its cycle-time decomposition.
 
@@ -114,13 +114,13 @@ The system logic: this cuts the "schedule pressure → quick fix" arrow at exact
 
 ## Systems Concepts at Play
 
-- [Feedback Loops](../concepts/feedback-loops.md) — the quick-fix loop is the canonical reinforcing spiral in software, and the balancing loop that opposes it is event-driven and decays as soon as incidents stop
-- [Stocks & Flows](../concepts/stocks-and-flows.md) — the central distinction of this problem: the stock is what hurts, the rate is what determines whether it gets better
-- [Delays](../concepts/delays.md) — months between a shortcut and its cost, and displacement onto a different engineer, is why individual discipline cannot correct this
-- [System Limits](../concepts/limits.md) — test coverage and deploy confidence on the hot files gate every paydown intervention regardless of budget
-- [System Traps](../concepts/system-traps.md) — "refactor after the deadline" is shifting the burden to the symptomatic fix, and each use weakens the capability to make the real one
-- [Hierarchy & Suboptimization](../concepts/hierarchy.md) — every team is measured on shipping its own features, and nobody is measured on the shared cost of the coupling they add
-- [Resilience](../concepts/resilience.md) — high coupling removes the buffers that let a system absorb a bad change, which is why incident severity rises before velocity visibly falls
+- [Feedback Loops](feedback-loops.md) — the quick-fix loop is the canonical reinforcing spiral in software, and the balancing loop that opposes it is event-driven and decays as soon as incidents stop
+- [Stocks & Flows](stocks-and-flows.md) — the central distinction of this problem: the stock is what hurts, the rate is what determines whether it gets better
+- [Delays](delays.md) — months between a shortcut and its cost, and displacement onto a different engineer, is why individual discipline cannot correct this
+- [System Limits](limits.md) — test coverage and deploy confidence on the hot files gate every paydown intervention regardless of budget
+- [System Traps](system-traps.md) — "refactor after the deadline" is shifting the burden to the symptomatic fix, and each use weakens the capability to make the real one
+- [Hierarchy & Suboptimization](hierarchy.md) — every team is measured on shipping its own features, and nobody is measured on the shared cost of the coupling they add
+- [Resilience](resilience.md) — high coupling removes the buffers that let a system absorb a bad change, which is why incident severity rises before velocity visibly falls
 
 ## Intervention Strategies
 
@@ -166,7 +166,7 @@ The system logic: this cuts the "schedule pressure → quick fix" arrow at exact
 
 ## What Would Change This Diagnosis
 
-- **Cost of change is high but flat over several years.** No loop is running. This is a stock to size and schedule, and the rate-control machinery here is unnecessary overhead. Read [Stocks & Flows](../concepts/stocks-and-flows.md).
+- **Cost of change is high but flat over several years.** No loop is running. This is a stock to size and schedule, and the rate-control machinery here is unnecessary overhead. Read [Stocks & Flows](stocks-and-flows.md).
 - **Change frequency is spread evenly with no hot spots.** The coupling lives between services or teams, not inside files. Read [Cross-Team Communication](cross-team-communication.md).
 - **Engineers make changes quickly but the changes wait for review or release.** The constraint is a queue downstream of the code. Go to [Velocity Decline](velocity-decline.md) and decompose cycle time first.
 - **The slowdown began within a quarter of specific senior departures and sits in their subsystems.** The code did not change; the people who understood it left. Read [Retention Problem](retention.md).

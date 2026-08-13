@@ -54,5 +54,5 @@ Ask, then commit, then show your work, then say what would change it.
 
 ### Frameworks in this repo
 
-- [Systems Thinking](Frameworks/Systems%20Thinking/Systems%20Thinking.md) — problem-first reference guide for applying Donella Meadows' systems thinking to tech work. See its [METHODOLOGY.md](Frameworks/Systems%20Thinking/METHODOLOGY.md) for the reusable structure behind it.
-- [Shape Up](Frameworks/Shape%20Up.md)
+- [Systems Thinking - Agent-written](Systems%20Thinking%20-%20Agent-written.md) — problem-first reference guide for applying Donella Meadows' systems thinking to tech work. See its [METHODOLOGY.md](METHODOLOGY.md) for the reusable structure behind it.
+- [shape-up](shape-up.md)

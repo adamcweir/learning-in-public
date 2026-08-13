@@ -45,9 +45,9 @@ Two things set the size of the swings: the length of the delay, and the aggressi
 ### Information delays
 
 - **Defect escape:** merged Tuesday, surfaces in production six weeks later, attributed to whoever touched the file most recently.
-- **Attrition:** an engineer disengages in January and resigns in June. The observable event trails the decision by months. See [Retention Problem](../problems/retention.md).
-- **Debt:** complexity accumulates for a year with no visible cost, then shows up all at once as an estimate that tripled. See [Architecture Debt](../problems/architecture-debt.md).
-- **Cross-team drift:** two teams diverge on an interface assumption in week 1 and discover it in integration week 9. See [Cross-Team Communication](../problems/cross-team-communication.md).
+- **Attrition:** an engineer disengages in January and resigns in June. The observable event trails the decision by months. See [Retention Problem](retention.md).
+- **Debt:** complexity accumulates for a year with no visible cost, then shows up all at once as an estimate that tripled. See [Architecture Debt](architecture-debt.md).
+- **Cross-team drift:** two teams diverge on an interface assumption in week 1 and discover it in integration week 9. See [Cross-Team Communication](cross-team-communication.md).
 
 ### Decision and action delays
 
@@ -58,8 +58,8 @@ Two things set the size of the swings: the length of the delay, and the aggressi
 ### Effect delays
 
 - **New hire ramp:** three to six months to full contribution, longer on a system with thin documentation.
-- **Refactoring:** the payoff shows up in estimates for work that hasn't been scoped yet, which means a quarter or two before the delivery curve moves. See [Velocity Decline](../problems/velocity-decline.md).
-- **Onboarding process changes:** you change the program in Q1 and the first cohort that experienced it is only measurable in Q3. See [Onboarding Friction](../problems/onboarding-friction.md).
+- **Refactoring:** the payoff shows up in estimates for work that hasn't been scoped yet, which means a quarter or two before the delivery curve moves. See [Velocity Decline](velocity-decline.md).
+- **Onboarding process changes:** you change the program in Q1 and the first cohort that experienced it is only measurable in Q3. See [Onboarding Friction](onboarding-friction.md).
 
 ### Stacked delay: hiring
 
@@ -168,11 +168,11 @@ The system logic: information delay is the only leg that makes every downstream 
 
 ## Cross-References to Problems
 
-- [Retention Problem](../problems/retention.md) — the ten-month stacked hiring delay is what turns one departure into a spiral, because the reinforcing loop cycles faster than the correction lands
-- [Velocity Decline](../problems/velocity-decline.md) — debt costs arrive a year after the decisions that created them, so the team is always paying for a quarter it can no longer identify
-- [Architecture Debt](../problems/architecture-debt.md) — refactoring pays off two quarters out, which is exactly long enough to get it cancelled at the first review
-- [Onboarding Friction](../problems/onboarding-friction.md) — process changes take two cohorts to become measurable, so onboarding programs get rewritten before any version is ever evaluated
-- [Cross-Team Communication](../problems/cross-team-communication.md) — divergent assumptions surface at integration, weeks after the cheap moment to correct them has passed
+- [Retention Problem](retention.md) — the ten-month stacked hiring delay is what turns one departure into a spiral, because the reinforcing loop cycles faster than the correction lands
+- [Velocity Decline](velocity-decline.md) — debt costs arrive a year after the decisions that created them, so the team is always paying for a quarter it can no longer identify
+- [Architecture Debt](architecture-debt.md) — refactoring pays off two quarters out, which is exactly long enough to get it cancelled at the first review
+- [Onboarding Friction](onboarding-friction.md) — process changes take two cohorts to become measurable, so onboarding programs get rewritten before any version is ever evaluated
+- [Cross-Team Communication](cross-team-communication.md) — divergent assumptions surface at integration, weeks after the cheap moment to correct them has passed
 
 ---
 

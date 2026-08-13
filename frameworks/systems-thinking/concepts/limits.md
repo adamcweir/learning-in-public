@@ -149,11 +149,11 @@ Practically, this is a week of work and does not require new tooling. Pull the l
 
 ## Cross-References to Problems
 
-- [Velocity Decline](../problems/velocity-decline.md) — the binding constraint on delivery is usually review latency, environment availability, or decision throughput rather than coding speed, which is where investment defaults
-- [Architecture Debt](../problems/architecture-debt.md) — paydown is gated by test coverage and deploy confidence on the hot files, so a refactoring budget granted without relieving that constraint buys nothing
-- [Retention Problem](../problems/retention.md) — hiring to replace departures is limited by interview and onboarding capacity, so raising the target without raising that capacity lengthens the gap instead of closing it
-- [Onboarding Friction](../problems/onboarding-friction.md) — senior attention is the shared constrained resource, which is why cohort size determines ramp time more than documentation quality does
-- [Cross-Team Communication](../problems/cross-team-communication.md) — cross-team throughput is typically limited by a single approval, review, or interface-owning team, and adding coordination process loads more work onto that same constraint
+- [Velocity Decline](velocity-decline.md) — the binding constraint on delivery is usually review latency, environment availability, or decision throughput rather than coding speed, which is where investment defaults
+- [Architecture Debt](architecture-debt.md) — paydown is gated by test coverage and deploy confidence on the hot files, so a refactoring budget granted without relieving that constraint buys nothing
+- [Retention Problem](retention.md) — hiring to replace departures is limited by interview and onboarding capacity, so raising the target without raising that capacity lengthens the gap instead of closing it
+- [Onboarding Friction](onboarding-friction.md) — senior attention is the shared constrained resource, which is why cohort size determines ramp time more than documentation quality does
+- [Cross-Team Communication](cross-team-communication.md) — cross-team throughput is typically limited by a single approval, review, or interface-owning team, and adding coordination process loads more work onto that same constraint
 
 ---
 

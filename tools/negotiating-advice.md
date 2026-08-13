@@ -1,6 +1,6 @@
-From Gary call 8/6/26
+Structure:
 
-------------
+-------------
 **Advice** : 
 > Script
 --------------
@@ -24,5 +24,7 @@ From Gary call 8/6/26
 
 - Leave the call with the goal of them coming back to me with what they are able to do. Full package request. Let me know if I need to talk them.
 
+- If they continue to reiterate that they benchmark on a levels benchmark, you can make the case that you should be moved up to the next level, which levels you up to the next compensation band.
+> "I hear you that you all are locked in to a leveling compensation framework. In my case, I think I am a bit more horsepower than the job description originally called for, thus what we are discussing now. What are the expectations and guidelines for the next level up?"
 
 

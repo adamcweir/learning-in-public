@@ -161,10 +161,10 @@ I start here for two reasons beyond that. It is cheap: an afternoon in git histo
 
 ## Cross-References to Problems
 
-- [Architecture Debt](../problems/architecture-debt.md) — the codebase is a commons where each team's shortcut is private benefit and shared cost, compounded by drift as "acceptable quality" resets to whatever shipped last quarter
-- [Velocity Decline](../problems/velocity-decline.md) — usually a drift to low performance in review, testing, and design standards, often masked by a story-point metric that keeps improving while delivered value falls
-- [Cross-Team Communication](../problems/cross-team-communication.md) — coordination initiatives get neutralized by policy resistance when each team is defending a target nobody has said out loud, and communication quality is itself an unowned commons
-- [Retention Problem](../problems/retention.md) — hiring bars and on-call load both drift downward against recent-past benchmarks, and retention initiatives meet policy resistance when the org's goal is headcount while the individual's is growth
+- [Architecture Debt](architecture-debt.md) — the codebase is a commons where each team's shortcut is private benefit and shared cost, compounded by drift as "acceptable quality" resets to whatever shipped last quarter
+- [Velocity Decline](velocity-decline.md) — usually a drift to low performance in review, testing, and design standards, often masked by a story-point metric that keeps improving while delivered value falls
+- [Cross-Team Communication](cross-team-communication.md) — coordination initiatives get neutralized by policy resistance when each team is defending a target nobody has said out loud, and communication quality is itself an unowned commons
+- [Retention Problem](retention.md) — hiring bars and on-call load both drift downward against recent-past benchmarks, and retention initiatives meet policy resistance when the org's goal is headcount while the individual's is growth
 
 ---
 

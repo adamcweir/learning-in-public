@@ -99,17 +99,17 @@ Concretely: the last two weeks of every notice period get restructured. No new w
 
 **The branch:** if your answer to question 2 surfaced a single clear perturbation — a reorg, a specific manager, a brutal project — then fix that first and directly. A structural intervention aimed at a specific cause is misallocated effort. Knowledge handoff still matters, but it's second.
 
-**What I would not start with:** opening more reqs. Adding people to a team whose senior attention is already spent makes the next quarter worse, not better. See [System Limits](../concepts/limits.md) for why increasing a non-binding input does nothing.
+**What I would not start with:** opening more reqs. Adding people to a team whose senior attention is already spent makes the next quarter worse, not better. See [System Limits](limits.md) for why increasing a non-binding input does nothing.
 
 ## Systems Concepts at Play
 
-- [Feedback Loops](../concepts/feedback-loops.md) — the departure/knowledge-loss spiral is reinforcing; the pain/attention/investment loop is balancing but too slow
-- [Delays](../concepts/delays.md) — three stacked delays make this system nearly impossible to steer by intuition and very easy to overcorrect
-- [Stocks & Flows](../concepts/stocks-and-flows.md) — headcount is the visible stock; knowledge is the governing one
-- [Hierarchy & Suboptimization](../concepts/hierarchy.md) — individual career goals, team stability, and company velocity are three different objectives, and the gap between them is where people leave from
-- [Resilience](../concepts/resilience.md) — a team with no knowledge redundancy is efficient right up until it isn't
-- [System Limits](../concepts/limits.md) — onboarding capacity is the binding constraint, which is why opening more reqs produces nothing
-- [System Traps](../concepts/system-traps.md) — responding to departures with more hiring is shifting the burden to the symptomatic fix; the underlying capability keeps eroding
+- [Feedback Loops](feedback-loops.md) — the departure/knowledge-loss spiral is reinforcing; the pain/attention/investment loop is balancing but too slow
+- [Delays](delays.md) — three stacked delays make this system nearly impossible to steer by intuition and very easy to overcorrect
+- [Stocks & Flows](stocks-and-flows.md) — headcount is the visible stock; knowledge is the governing one
+- [Hierarchy & Suboptimization](hierarchy.md) — individual career goals, team stability, and company velocity are three different objectives, and the gap between them is where people leave from
+- [Resilience](resilience.md) — a team with no knowledge redundancy is efficient right up until it isn't
+- [System Limits](limits.md) — onboarding capacity is the binding constraint, which is why opening more reqs produces nothing
+- [System Traps](system-traps.md) — responding to departures with more hiring is shifting the burden to the symptomatic fix; the underlying capability keeps eroding
 
 ## Intervention Strategies
 

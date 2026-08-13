@@ -19,19 +19,19 @@ Applying Donella Meadows' systems thinking to problems technology workers face.
 
 ### Team & Culture
 
-- **[Retention Problem](problems/retention.md)** — Experienced engineers leaving faster than you can replace them. Is this a compensation problem or a knowledge-loss spiral?
+- **[Retention Problem](retention.md)** — Experienced engineers leaving faster than you can replace them. Is this a compensation problem or a knowledge-loss spiral?
 
-- **[Onboarding Friction](problems/onboarding-friction.md)** — New engineers take 3+ months to be productive, and some leave before they get there. What's throttling the learning loop?
+- **[Onboarding Friction](onboarding-friction.md)** — New engineers take 3+ months to be productive, and some leave before they get there. What's throttling the learning loop?
 
 ### Infrastructure & Debt
 
-- **[Velocity Decline](problems/velocity-decline.md)** — Throughput dropping despite stable headcount and effort. What changed in the system that didn't change in the team?
+- **[Velocity Decline](velocity-decline.md)** — Throughput dropping despite stable headcount and effort. What changed in the system that didn't change in the team?
 
-- **[Architecture Debt](problems/architecture-debt.md)** — Every change is slower and riskier than the last. Which loop is manufacturing the complexity?
+- **[Architecture Debt](architecture-debt.md)** — Every change is slower and riskier than the last. Which loop is manufacturing the complexity?
 
 ### Coordination
 
-- **[Cross-Team Communication](problems/cross-team-communication.md)** — Misalignment, duplicate work, blocked dependencies, decisions that take weeks. Is this an information delay or a goal conflict?
+- **[Cross-Team Communication](cross-team-communication.md)** — Misalignment, duplicate work, blocked dependencies, decisions that take weeks. Is this an information delay or a goal conflict?
 
 ### Planned
 
@@ -48,19 +48,19 @@ Not yet written. Following the process in [METHODOLOGY.md](METHODOLOGY.md).
 
 The foundational principles. Each explains how the concept shows up in tech and which levers it gives you.
 
-- **[Feedback Loops](concepts/feedback-loops.md)** — How systems reinforce or balance themselves. The engine behind most spirals.
+- **[Feedback Loops](feedback-loops.md)** — How systems reinforce or balance themselves. The engine behind most spirals.
 
-- **[Stocks & Flows](concepts/stocks-and-flows.md)** — The building blocks. What's accumulating, what's draining, and at what rate.
+- **[Stocks & Flows](stocks-and-flows.md)** — The building blocks. What's accumulating, what's draining, and at what rate.
 
-- **[Delays](concepts/delays.md)** — Time lags that make systems hard to steer and easy to overcorrect.
+- **[Delays](delays.md)** — Time lags that make systems hard to steer and easy to overcorrect.
 
-- **[Hierarchy & Suboptimization](concepts/hierarchy.md)** — How subsystems win at the expense of the whole.
+- **[Hierarchy & Suboptimization](hierarchy.md)** — How subsystems win at the expense of the whole.
 
-- **[Resilience](concepts/resilience.md)** — Why systems that look efficient break badly.
+- **[Resilience](resilience.md)** — Why systems that look efficient break badly.
 
-- **[System Limits](concepts/limits.md)** — The single binding constraint, and why everything else you optimize does nothing.
+- **[System Limits](limits.md)** — The single binding constraint, and why everything else you optimize does nothing.
 
-- **[System Traps](concepts/system-traps.md)** — Recurring pathological patterns: Policy Resistance, Tragedy of the Commons, Drift to Low Performance, Seeking the Wrong Goal.
+- **[System Traps](system-traps.md)** — Recurring pathological patterns: Policy Resistance, Tragedy of the Commons, Drift to Low Performance, Seeking the Wrong Goal.
 
 ---
 
@@ -70,7 +70,7 @@ The foundational principles. Each explains how the concept shows up in tech and 
 
 2. **You want the underlying principle.** Each problem links to the concepts it reveals. Read those to see the same structure show up in problems that look unrelated.
 
-3. **You want to diagnose something not listed.** Start with [Stocks & Flows](concepts/stocks-and-flows.md) to find what's accumulating, then [Feedback Loops](concepts/feedback-loops.md) to find what's driving it, then [Delays](concepts/delays.md) to understand why your fixes aren't showing up yet.
+3. **You want to diagnose something not listed.** Start with [Stocks & Flows](stocks-and-flows.md) to find what's accumulating, then [Feedback Loops](feedback-loops.md) to find what's driving it, then [Delays](delays.md) to understand why your fixes aren't showing up yet.
 
 4. **You're building a similar guide for another topic.** Read [METHODOLOGY.md](METHODOLOGY.md) for the reusable structure, and [PHASE-2-ROADMAP.md](PHASE-2-ROADMAP.md) for what's queued here.
 
@@ -80,4 +80,4 @@ The foundational principles. Each explains how the concept shows up in tech and 
 
 **Source:** Donella Meadows, *Thinking in Systems* — [full text](https://blas.com/wp-content/uploads/2019/07/Thinking-in-Systems.pdf). Notes in [[Thinking in Systems]]. The concepts are hers; the tech applications, examples, and interventions are the interpretation layer.
 
-**Related:** [[ecosystems]], [[Socratic Questioning]], [[Opportunity Solution Trees]]
+**Related:** [[ecosystems]], [[socratic-questioning]], [[opportunity-solution-trees]]

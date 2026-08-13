@@ -40,28 +40,28 @@ So the question worth asking about any stock is **which flow is producing the le
 - **Stock:** engineers on the team, weighted by ramp
 - **Inflows:** hiring, internal transfers in, returning leave
 - **Outflows:** resignations, transfers out, reorg reassignment
-- **Behavior:** headcount looks stable right up until it doesn't, because a hire and a departure in the same month net to zero on the chart while destroying months of context. See [Retention Problem](../problems/retention.md).
+- **Behavior:** headcount looks stable right up until it doesn't, because a hire and a departure in the same month net to zero on the chart while destroying months of context. See [Retention Problem](retention.md).
 
 ### Codebase complexity
 
 - **Stock:** services, modules, interdependencies, configuration surface
 - **Inflows:** new features, copy-pasted logic, new integrations, new services
 - **Outflows:** refactoring, deletion, consolidation, decommissioning
-- **Behavior:** the inflow is continuous and rewarded; the outflow requires a decision nobody is measured on. See [Architecture Debt](../problems/architecture-debt.md).
+- **Behavior:** the inflow is continuous and rewarded; the outflow requires a decision nobody is measured on. See [Architecture Debt](architecture-debt.md).
 
 ### Team knowledge
 
 - **Stock:** who knows why the system is shaped the way it is
 - **Inflows:** shipping, pairing, documentation, decision records, onboarding
 - **Outflows:** departures, forgetting, code changing out from under the documentation
-- **Behavior:** declines invisibly, because the loss registers only when someone needs the missing knowledge — usually during an incident. See [Onboarding Friction](../problems/onboarding-friction.md).
+- **Behavior:** declines invisibly, because the loss registers only when someone needs the missing knowledge — usually during an incident. See [Onboarding Friction](onboarding-friction.md).
 
 ### Work in progress
 
 - **Stock:** open tickets, in-flight branches, unreleased changes
 - **Inflows:** requests, bug reports, discovered work
 - **Outflows:** shipping, closing, explicit rejection
-- **Behavior:** WIP grows until the coordination cost of holding it consumes the capacity that would drain it. See [Velocity Decline](../problems/velocity-decline.md).
+- **Behavior:** WIP grows until the coordination cost of holding it consumes the capacity that would drain it. See [Velocity Decline](velocity-decline.md).
 
 ### The tech-specific catch
 
@@ -155,10 +155,10 @@ The system logic: in software organizations the outflow is the unmanaged flow, s
 
 ## Cross-References to Problems
 
-- [Retention Problem](../problems/retention.md) — team capacity as a stock: hiring inflow against departure outflow, with knowledge draining through the same pipe
-- [Velocity Decline](../problems/velocity-decline.md) — WIP and complexity accumulate faster than they drain, and the accumulation consumes the capacity that would drain it
-- [Architecture Debt](../problems/architecture-debt.md) — the canonical automatic-inflow, manual-outflow stock; complexity rises by default
-- [Onboarding Friction](../problems/onboarding-friction.md) — knowledge as a stock, with mentoring capacity as the flow constraint on refilling it
+- [Retention Problem](retention.md) — team capacity as a stock: hiring inflow against departure outflow, with knowledge draining through the same pipe
+- [Velocity Decline](velocity-decline.md) — WIP and complexity accumulate faster than they drain, and the accumulation consumes the capacity that would drain it
+- [Architecture Debt](architecture-debt.md) — the canonical automatic-inflow, manual-outflow stock; complexity rises by default
+- [Onboarding Friction](onboarding-friction.md) — knowledge as a stock, with mentoring capacity as the flow constraint on refilling it
 
 ---
 

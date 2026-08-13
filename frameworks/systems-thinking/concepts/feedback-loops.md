@@ -44,10 +44,10 @@ Most real systems have both, competing for dominance. The question worth asking 
 
 ### Reinforcing loops you'll recognize
 
-- **Departure spiral:** engineers leave → knowledge lost → onboarding slows → new hires frustrated → new hires leave. See [Retention Problem](../problems/retention.md).
-- **Debt acceleration:** quick fix → complexity grows → changes take longer → more schedule pressure → more quick fixes. See [Architecture Debt](../problems/architecture-debt.md).
-- **Communication breakdown:** miscommunication → duplicate or wasted work → frustration → less voluntary collaboration → more miscommunication. See [Cross-Team Communication](../problems/cross-team-communication.md).
-- **Onboarding drag:** slow ramp → new hire contributes less → seniors carry more → less mentoring time → slower ramp for the next hire. See [Onboarding Friction](../problems/onboarding-friction.md).
+- **Departure spiral:** engineers leave → knowledge lost → onboarding slows → new hires frustrated → new hires leave. See [Retention Problem](retention.md).
+- **Debt acceleration:** quick fix → complexity grows → changes take longer → more schedule pressure → more quick fixes. See [Architecture Debt](architecture-debt.md).
+- **Communication breakdown:** miscommunication → duplicate or wasted work → frustration → less voluntary collaboration → more miscommunication. See [Cross-Team Communication](cross-team-communication.md).
+- **Onboarding drag:** slow ramp → new hire contributes less → seniors carry more → less mentoring time → slower ramp for the next hire. See [Onboarding Friction](onboarding-friction.md).
 
 ### Balancing loops you'll recognize
 
@@ -140,11 +140,11 @@ Practically: write each arrow as a sentence with a subject and a verb. Then for 
 
 ## Cross-References to Problems
 
-- [Retention Problem](../problems/retention.md) — departures → knowledge loss → slower onboarding → more departures (reinforcing); pain → leadership attention → investment (balancing, too slow)
-- [Velocity Decline](../problems/velocity-decline.md) — debt accumulation feeds back on delivery speed, which feeds back on debt creation
-- [Architecture Debt](../problems/architecture-debt.md) — the quick-fix loop, the canonical reinforcing spiral in software
-- [Onboarding Friction](../problems/onboarding-friction.md) — slow ramp consumes the mentoring capacity that would speed the ramp
-- [Cross-Team Communication](../problems/cross-team-communication.md) — miscommunication compounds (reinforcing); misaligned team goals resist correction (balancing)
+- [Retention Problem](retention.md) — departures → knowledge loss → slower onboarding → more departures (reinforcing); pain → leadership attention → investment (balancing, too slow)
+- [Velocity Decline](velocity-decline.md) — debt accumulation feeds back on delivery speed, which feeds back on debt creation
+- [Architecture Debt](architecture-debt.md) — the quick-fix loop, the canonical reinforcing spiral in software
+- [Onboarding Friction](onboarding-friction.md) — slow ramp consumes the mentoring capacity that would speed the ramp
+- [Cross-Team Communication](cross-team-communication.md) — miscommunication compounds (reinforcing); misaligned team goals resist correction (balancing)
 
 ---
 
