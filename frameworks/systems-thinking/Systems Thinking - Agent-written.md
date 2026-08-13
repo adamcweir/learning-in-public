@@ -1,6 +1,9 @@
 ---
 description: "Problem-first reference guide for applying systems thinking to tech problems"
 source: "Thinking in Systems — Donella Meadows"
+topics:
+  - "Operational Efficiency"
+  - "Thinking & Communication"
 ---
 
 # Systems Thinking Reference Guide

@@ -52,7 +52,22 @@ Ask, then commit, then show your work, then say what would change it.
 - **YAML frontmatter for structure, not hashtags.** Agents traverse YAML; they can't follow hashtags. Machine-readable metadata at the top, human-readable content below.
 - **Bidirectional links.** If A references B, B references A.
 
+### Topics
+
+Frameworks, tools, and people below are organized by kind. [topics/Topics.md](topics/Topics.md) organizes the same material by theme instead — product management, processes, operational efficiency, and so on — so related items surface regardless of which folder they live in.
+
 ### Frameworks in this repo
 
 - [Systems Thinking - Agent-written](frameworks/systems-thinking/Systems%20Thinking%20-%20Agent-written.md) — problem-first reference guide for applying Donella Meadows' systems thinking to tech work. See [docs/METHODOLOGY.md](docs/METHODOLOGY.md) for the reusable structure behind it.
-- [shape-up](frameworks/shape-up.md)
+- [Shape Up - Agent-written](frameworks/shape-up/Shape%20Up%20-%20Agent-written.md) — problem-first reference guide for running Shape Up cycles. See [docs/METHODOLOGY.md](docs/METHODOLOGY.md) for the reusable structure behind it.
+
+### Tools in this repo
+
+- [Opportunity Solution Trees](tools/opportunity-solution-trees.md) — Teresa Torres' structure for connecting outcomes to opportunities to solutions.
+- [Socratic Questioning](tools/socratic-questioning.md) — exposing an idea's contradictions through questions rather than assertions.
+- [Negotiating Advice](tools/negotiating-advice.md) — scripts and stance for negotiating comp and leveling.
+
+### People in this repo
+
+- [Shishir Mehrotra](people/shishir-mehrotra.md) — product planning frameworks, bundling, AI-native culture.
+- [Michael Pollan](people/michael-pollan.md) — board of advisors persona; not yet fleshed out.

@@ -13,6 +13,21 @@ Every framework, person, and tool has a human-written source page. It stays exac
 
 Where a human page's rituals, concepts, or advice call for their own page, break them out — one page per ritual/concept/problem, in the right subfolder, following the templates below.
 
+This document assumes nothing about which agent, model, or tool is reading it. Everything here is plain markdown, read directly — no tool-specific config, no assumption of a particular skill-packaging format. Any agent pointed at this file and a source page can follow it end to end.
+
+---
+
+# Process
+
+Every breakdown or addition follows this sequence. Step 5 is not a later cleanup pass — it happens in the same sitting as everything else, every time.
+
+1. **Decide if it needs a folder.** See When to Break a Page Down.
+2. **Build the folder.** Source page renamed and untouched, one file per sub-item. See Folder Shape.
+3. **Mark authorship** on every derived page. See Marking Authorship.
+4. **Write each page** with the right frontmatter and section order, in the house style. See Frontmatter by Sub-Item Type, Section Order, and Writing Stance.
+5. **Update the theme index.** Tag the new or changed landing page with `topics:`, and add it to the relevant theme page(s) in `topics/Topics.md`. See Cross-Cutting Themes.
+6. **Check the completion checklist** before calling it done.
+
 ---
 
 # When to Break a Page Down
@@ -76,7 +91,7 @@ This replaces the ad-hoc "- Agent-written" filename suffix used in the first sys
 
 # What a "Skill" Is Here
 
-A skill is a markdown page in the topic's folder — the same file type as a concept or problem page, not a separate installable Claude Code skill. Shape:
+A skill is a markdown page in the topic's folder — the same file type as a concept or problem page, not a separately packaged, tool-specific skill format (e.g. Claude Code's `SKILL.md`, a Cursor rule, or similar). Shape:
 
 ```yaml
 ---
@@ -97,7 +112,7 @@ related_concepts: []
 (stance, discovery questions to ask, what to commit to — following the house style)
 ```
 
-**Why this shape and not a real `SKILL.md`:** the vault is read as context by an agent already in conversation — that's exactly how `frameworks/systems-thinking/` works today, with no install step. If a specific skill earns reuse outside this vault, promote it to a real installable skill as a deliberate, separate step later. That's not the default for every framework, person, or tool that gets broken down.
+**Why this shape and not a packaged skill format:** the vault is read as context by an agent already in conversation, whatever that agent's tooling is — that's exactly how `frameworks/systems-thinking/` works today, with no install step and no dependency on any one provider's plugin system. If a specific skill earns reuse outside this vault, promote it to whatever packaged-skill format your agent tooling supports, as a deliberate, separate step later. That's not the default for every framework, person, or tool that gets broken down.
 
 ---
 
@@ -171,6 +186,21 @@ When a source page references something without explaining it — a named techni
 
 ---
 
+# Cross-Cutting Themes (`topics/`)
+
+This is Process step 5. Do it in the same sitting as the rest of the breakdown, not as a follow-up — a page that's structurally complete but untagged is not done.
+
+Not to be confused with a "topic" as used everywhere above (a single framework, tool, or person getting broken down) — `topics/` is a separate, cross-cutting index that groups material by *theme* (Product Management, Operational Efficiency, and so on) regardless of which of `frameworks/`, `tools/`, or `people/` it lives in. See [topics/Topics.md](../topics/Topics.md) for the current set of themes and the worked example.
+
+When you break down or add a framework, tool, or person:
+
+- Add a `topics: []` field to its landing page's frontmatter (or its own frontmatter, if it's a single unbroken page with frontmatter already), listing every theme in `topics/Topics.md` it belongs to.
+- Add it to each of those theme pages, under the right category, as a one-line bolded link plus what it's for — same as any other index entry.
+- Don't add a `topics` field to a human-written source page solely for this, same rule as **Marking Authorship**. Its theme assignment lives in the theme page only, one-directionally, until it has an agent-written landing page of its own.
+- If nothing existing fits, either add a new theme page and list it in `topics/Topics.md`, or — if it's genuinely thin (one item, no real cluster yet) — note it under that page's "Coverage Gaps" instead of creating a page with nothing in it.
+
+---
+
 # Completion Checklist
 
 A breakdown is done when:
@@ -181,6 +211,7 @@ A breakdown is done when:
 - [ ] Every link resolves to a file that exists
 - [ ] The topic's landing page has both a **When to use it** and an **Agents/Skills Available** section (in whatever heading form fits the topic)
 - [ ] The repo [README](../README.md)'s topic index is updated, if this is a new top-level framework, person, or tool
+- [ ] It's tagged under at least one theme in [topics/Topics.md](../topics/Topics.md), and that theme page links back
 - [ ] At least one worked example exists per skill or problem page
 
 ---
