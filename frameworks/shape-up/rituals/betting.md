@@ -10,6 +10,7 @@ related_concepts:
   - "Pitch"
   - "Building"
   - "Cool-down"
+  - "The Strategist"
 ---
 
 # Betting
@@ -36,4 +37,5 @@ If a project doesn't finish by the end of its cycle, it ends by default — see 
 - [Pitch](pitch.md) — what gets bet on
 - [Building](building.md) — what happens after a bet is placed
 - [Cool-down](cool-down.md) — when betting happens
+- [The Strategist](../skills/the-strategist.md) — whose appetite call gets tested at this table
 - [Shape Up - source](../Shape%20Up%20-%20source.md)

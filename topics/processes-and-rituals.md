@@ -13,6 +13,7 @@ Recurring mechanisms a team runs on: how work gets proposed, chosen, paced, and 
 ## Frameworks
 
 - **[Shape Up](../frameworks/shape-up/Shape%20Up%20-%20Agent-written.md)** — the full cycle: [Shaping](../frameworks/shape-up/rituals/shaping.md) → [Pitch](../frameworks/shape-up/rituals/pitch.md) → [Betting](../frameworks/shape-up/rituals/betting.md) → [Building](../frameworks/shape-up/rituals/building.md) → [Cool-down](../frameworks/shape-up/rituals/cool-down.md).
+- **[Shape a Pitch](../frameworks/shape-up/skills/shape-a-pitch.md)** — running Shaping as a simulated three-person session (Designer, Strategist, Technical Implementer) when there's no actual room to do it with.
 
 ## Related Situations
 

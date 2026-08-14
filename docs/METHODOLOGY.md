@@ -72,7 +72,7 @@ For anything past the expansion threshold:
   ...
 ```
 
-`{category}` is whichever top-level folder the topic already lives in (`frameworks/`, `people/`, `tools/`). When a topic has more than one *kind* of sub-item, use subfolders — the pattern already proven in `frameworks/systems-thinking/` is `concepts/` for foundational principles and `problems/` for situations. `frameworks/shape-up/` would likely want `rituals/`.
+`{category}` is whichever top-level folder the topic already lives in (`frameworks/`, `people/`, `tools/`). When a topic has more than one *kind* of sub-item, use subfolders — the patterns proven so far: `concepts/` and `problems/` in `frameworks/systems-thinking/`; `rituals/` (skill pages for the topic's own named steps), `skills/` (skill pages for something else the source material calls for — e.g. personas that should be in the room), and `artifacts/` (templates or supporting documents a skill or ritual page references, not read on their own) in `frameworks/shape-up/`. Use whichever subset the source material actually calls for — not every topic needs all of them.
 
 **Never link to a file that doesn't exist yet.** List planned-but-unwritten sub-items in a "Planned" section without links — see the Problem Gateway's "Planned" list for the pattern.
 

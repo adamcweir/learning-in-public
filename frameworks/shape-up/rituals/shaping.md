@@ -8,6 +8,10 @@ trigger:
 related_concepts:
   - "Pitch"
   - "Betting"
+  - "The Designer"
+  - "The Strategist"
+  - "The Technical Implementer"
+  - "Shape a Pitch"
 ---
 
 # Shaping
@@ -23,7 +27,7 @@ It's also the fix for a specific failure mode: work that starts vague and never 
 **Ask first:**
 - What's the raw idea or problem, in one sentence, without a proposed solution attached?
 - How much time is this worth? An afternoon of thought, or a full six-week cycle?
-- Who needs to be in the room — is there someone technical, someone with design sense, and someone thinking strategically about tradeoffs?
+- Who needs to be in the room — [someone technical](../skills/the-technical-implementer.md), [someone with design sense](../skills/the-designer.md), and [someone thinking strategically about tradeoffs](../skills/the-strategist.md)?
 
 **Where I'd start:** Set the boundaries before sketching anything. Fix the appetite (how much time this is worth) and the problem definition first — solutions drift to fill whatever time you didn't bound in advance. Only after that, rough out the solution at a level *above* wireframes: concrete enough that a technical person could build it, abstract enough that you haven't pre-decided details that hide real complexity. This ordering is the whole point of shaping — skip it and you get either a vague brief that never converges, or a wireframe that fakes confidence about a solution nobody's pressure-tested.
 
@@ -39,4 +43,6 @@ The four steps, in order:
 
 - [Pitch](pitch.md) — the artifact this ritual produces
 - [Betting](betting.md) — where a finished pitch goes next
+- [The Designer](../skills/the-designer.md), [The Strategist](../skills/the-strategist.md), [The Technical Implementer](../skills/the-technical-implementer.md) — the three lenses this ritual needs in the room
+- [Shape a Pitch](../skills/shape-a-pitch.md) — running this ritual as a simulated three-person session when there's no actual room
 - [Shape Up - source](../Shape%20Up%20-%20source.md)

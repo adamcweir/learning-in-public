@@ -35,13 +35,28 @@ The cycle, in order:
 - **[Building](rituals/building.md)** — Executing a bet within a fixed cycle, tracked by scope (9 boxes) rather than points.
 - **[Cool-down](rituals/cool-down.md)** — The unscheduled gap between cycles, protected from being quietly filled.
 
+## Skills
+
+Shaping calls for three lenses in the room at once. These personas run each one, plus a meta-skill that runs all three when there's no actual room to do it with:
+
+- **[The Designer](skills/the-designer.md)** — how the solution will actually be experienced, not just what it does.
+- **[The Strategist](skills/the-strategist.md)** — why now, how much it's worth, and what's explicitly out.
+- **[The Technical Implementer](skills/the-technical-implementer.md)** — whether it's buildable in the appetite, and where the rabbit holes are.
+- **[Shape a Pitch](skills/shape-a-pitch.md)** — runs all three in sequence and writes the result into a pitch.
+
+## Artifacts
+
+- **[Pitch Template](artifacts/shape-up-pitch-template.md)** — the concrete format a pitch gets written into.
+- **[9-Box Template](artifacts/nine-box-template.md)** — the tracking breakdown a bet gets translated into at the start of Building.
+
 ## How to Navigate
 
 1. **You're about to start something new.** Start at [Shaping](rituals/shaping.md) and follow the cycle forward.
-2. **You're deciding what to build next cycle.** Go to [Betting](rituals/betting.md).
-3. **You're mid-cycle and progress tracking feels wrong.** Go to [Building](rituals/building.md).
-4. **Someone wants to skip cool-down.** Go to [Cool-down](rituals/cool-down.md).
-5. **You're building a similar guide for another framework.** Read [METHODOLOGY.md](../../docs/METHODOLOGY.md).
+2. **You have an idea but no one to shape it with.** Go to [Shape a Pitch](skills/shape-a-pitch.md).
+3. **You're deciding what to build next cycle.** Go to [Betting](rituals/betting.md).
+4. **You're mid-cycle and progress tracking feels wrong.** Go to [Building](rituals/building.md).
+5. **Someone wants to skip cool-down.** Go to [Cool-down](rituals/cool-down.md).
+6. **You're building a similar guide for another framework.** Read [METHODOLOGY.md](../../docs/METHODOLOGY.md).
 
 ## About This Guide
 
